@@ -12,9 +12,9 @@ $font_2: Open Sans;
 
 //urls
 $url_0: url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700);
-$url_1: url(sect1.css);
-$url_2: url(sect2.css);
-$url_3: url(sect3.css);
+$url_1: url(sect1.scss);
+$url_2: url(sect2.scss);
+$url_3: url(sect3.scss);
 
 @import $url_0;
 @import $url_1;
