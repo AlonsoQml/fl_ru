@@ -1,0 +1,220 @@
+@media only screen and(max-width : 1600px) {
+}
+@media only screen and(max-width : 1200px) {
+	.description {
+		width: 100%;
+		display: flex;
+		flex-flow: column-reverse;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.descr_text {
+		flex-basis: 100%;
+		h1 br {
+			display: none;
+		}
+	}
+	.descr_img {
+		flex-basis: 100%;
+		margin-bottom: 60px;
+		img {
+			height: auto;
+		}
+	}
+	.img_wrap {
+		width: 100%;
+	}
+}
+@media only screen and(max-width : 992px) {
+}
+@media only screen and(max-width : 768px) {
+	.descr_text h1 {
+		margin: 0;
+		font-size: 2em;
+		font-weight: bold;
+	}
+}
+@media only screen and(max-width : 480px) {
+	body {
+		padding: 0 16px;
+	}
+	.erat_item_text {
+		margin-left: 0;
+	}
+	.ipsum_items_wrap {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 70px 80px;
+	}
+	.descr_text h1 {
+		font-size: 1.75em;
+	}
+	.erat .erat_icon {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(45deg);
+		width: 55px;
+		height: 55px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+		margin-left: 22px;
+		float: none;
+		margin-bottom: 30px;
+		i {
+			font-size: 1.5em;
+			top: 16;
+			left: 16;
+		}
+	}
+}
+@media only screen and(min-width : 480px) {
+	.descr_text {
+		flex-basis: 100%;
+		h1 {
+			margin: 0;
+			font-size: 2em;
+			font-weight: bold;
+		}
+	}
+	.descr_img {
+		flex-basis: 100%;
+	}
+	.erat {
+		.erat_items_group {
+			flex-direction: column;
+			margin-bottom: 0;
+		}
+		.erat_item_wrap {
+			padding-bottom: 66px;
+		}
+	}
+}
+@media only screen and(min-width : 768px) {
+}
+@media only screen and(min-width : 992px) {
+	.descr_text h1 {
+		margin: 0;
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+	.erat .erat_items_group {
+		flex-direction: row;
+	}
+}
+@media only screen and(min-width : 1200px) {
+	.descr_text h1 {
+		margin: 0;
+		font-size: 3em;
+		font-weight: bold;
+	}
+}
+@media only screen and(min-width : 1600px) {
+	body {
+		padding: 0 100px;
+	}
+	.button {
+		font-size: 1em;
+		padding: 12px 22px;
+		letter-spacing: 1;
+		font-weight: 400;
+	}
+	.side_menu {
+		width: 320px;
+	}
+	main {
+		margin-bottom: 120px;
+	}
+	.editorial_by {
+		font-size: 1.25em;
+	}
+	.description {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.descr_text {
+		margin-right: 62px;
+		h1 {
+			margin: 0;
+			font-size: 4.5em;
+			font-weight: bold;
+		}
+		p {
+			font-size: 1.25em;
+		}
+		h5 {
+			font-size: 1.25em;
+		}
+	}
+	.ipsum_items_wrap {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-gap: 130px 60px;
+	}
+	.erat {
+		margin-bottom: 100px;
+		.hr_red {
+			width: 11em;
+		}
+		h3 {
+			font-size: 1.9em;
+			font-weight: bold;
+			margin-bottom: 17;
+		}
+		p {
+			font-size: 1.1em;
+			margin-left: 40px;
+		}
+		h5 {
+			margin-left: 40px;
+			font-size: 1.4em;
+		}
+		.erat_icon {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotate(45deg);
+			width: 120px;
+			height: 120px;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 5px;
+			margin-left: 22px;
+			i {
+				font-size: 3em;
+				top: 38;
+				left: 38;
+			}
+		}
+	}
+	.erat_items {
+		margin-bottom: 100px;
+	}
+	.ipsum {
+		h3 {
+			font-size: 1.9em;
+			font-weight: bold;
+			margin-bottom: 17;
+		}
+		.hr_red {
+			margin-bottom: 70px;
+			width: 15em;
+		}
+	}
+	.ipsum_text {
+		h3 {
+			font-size: 1.5em;
+			margin-bottom: 30px;
+		}
+		p {
+			font-size: 1.1em;
+			margin-bottom: 50px;
+		}
+	}
+	.social_links i {
+		font-size: 1.25em;
+		margin-left: 25px;
+	}
+	.ipsum_img img {
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all .3s ease-in-out;
+		width: 100%;
+		height: auto;
+	}
+}
