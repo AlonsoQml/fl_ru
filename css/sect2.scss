@@ -1,0 +1,81 @@
+//colors
+$color_bon_jour_approx: #dde1e3;
+$color_bittersweet_approx: #f56a6a;
+$color_oslo_gray_approx: #7f888f;
+
+//@extend-elements
+//original selectors
+//.erat h3, .ipsum h3
+%extend_1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 17;
+}
+
+
+.erat {
+	margin-top: 65px;
+	.hr_red {
+		width: 9em;
+		height: 3px;
+		margin-bottom: 65px;
+	}
+	h3 {
+		@extend %extend_1;
+	}
+	.erat_items_group {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 70px;
+	}
+	.erat_icon {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(45deg);
+		width: 90px;
+		height: 90px;
+		border: 2px solid $color_bon_jour_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		float: left;
+		margin-left: 22px;
+		i {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotate(-45deg);
+			font-size: 40px;
+			color: $color_bittersweet_approx;
+			position: relative;
+			top: 27;
+			left: 27;
+		}
+	}
+}
+.ipsum {
+	.hr_red {
+		width: 12em;
+		height: 3px;
+		margin-bottom: 43px;
+	}
+	h3 {
+		@extend %extend_1;
+	}
+}
+.erat_item_wrap {
+	width: 100%;
+	flex-basis: 50%;
+	padding-right: 45px;
+	h5 {
+		font-size: 16px;
+		margin: 0;
+	}
+	p {
+		font-size: 13px;
+		line-height: 1.8;
+		color: $color_oslo_gray_approx;
+	}
+}
+.erat_item_text {
+	margin-left: 172px;
+}
