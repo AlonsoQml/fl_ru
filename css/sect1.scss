@@ -1,0 +1,81 @@
+//colors
+$color_oslo_gray_approx: #88888f;
+$black: #000;
+$color_bittersweet_approx: #f56a6a;
+
+main {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+.editorial_by {
+	font-size: .9em;
+	float: left;
+	color: $color_oslo_gray_approx;
+	text-decoration: none;
+}
+.social_links {
+	float: right;
+	i {
+		color: $color_oslo_gray_approx;
+		font-size: 1em;
+		margin-left: 15px;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all .3s ease;
+		&:hover {
+			color: $color_bittersweet_approx;
+		}
+	}
+}
+.top_links {
+	margin-top: 130px;
+	padding-bottom: 35px;
+}
+.description {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.descr_text {
+	padding-right: 30px;
+	flex-basis: 50%;
+	width: 100%;
+	h5 {
+		color: $color_oslo_gray_approx;
+		font-size: 13px;
+		letter-spacing: 1.2;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	p {
+		color: $color_oslo_gray_approx;
+		font-size: .8em;
+		line-height: 1.7;
+		margin-bottom: 35px;
+	}
+	h1 {
+		margin: 0;
+		font-size: 3em;
+		font-weight: bold;
+	}
+}
+.descr_img {
+	flex-basis: 50%;
+	width: 100%;
+	width: 100%;
+	.img_wrap img {
+		width: 100%;
+	}
+}
+a.editorial_by {
+	span {
+		color: $black;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: color .3s ease-in-out;
+		font-weight: bold;
+	}
+	&:hover > span {
+		color: $color_bittersweet_approx;
+	}
+}
