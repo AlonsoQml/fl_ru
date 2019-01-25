@@ -1,0 +1,116 @@
+//colors
+$color_bright_gray_approx: #3c424d;
+$color_cape_cod_approx: #3d4449;
+$color_bittersweet_approx: #f56a6a;
+$color_bittersweet_5_approx: rgba(245, 106, 106, 0.05);
+$color_bon_jour_approx: #dde1e3;
+
+//fonts
+$font_0: Roboto Slab;
+$font_1: sans-serif;
+$font_2: Open Sans;
+
+//urls
+$url_0: url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700);
+$url_1: url(sect1.css);
+$url_2: url(sect2.css);
+$url_3: url(sect3.css);
+
+@import $url_0;
+@import $url_1;
+@import $url_2;
+@import $url_3;
+.nav {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 54px;
+	background-color: $color_bright_gray_approx;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+body {
+	padding: 0 50px;
+	color: $color_cape_cod_approx;
+}
+a {
+	font-family: $font_0, $font_1;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all .2s ease-in-out;
+	&:hover {
+		text-decoration: none;
+		color: $color_bittersweet_approx;
+	}
+}
+h1 {
+	font-family: $font_0, $font_1;
+	color: $color_cape_cod_approx;
+}
+h2 {
+	font-family: $font_0, $font_1;
+	color: $color_cape_cod_approx;
+}
+h3 {
+	font-family: $font_0, $font_1;
+	color: $color_cape_cod_approx;
+}
+h4 {
+	font-family: $font_0, $font_1;
+	color: $color_cape_cod_approx;
+}
+h5 {
+	font-family: $font_0, $font_1;
+	color: $color_cape_cod_approx;
+}
+h6 {
+	font-family: $font_0, $font_1;
+	color: $color_cape_cod_approx;
+}
+p {
+	font-family: $font_2, $font_1;
+}
+span {
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: color .3s ease-in-out;
+}
+img {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+}
+.button {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .7em;
+	font-weight: bold;
+	color: $color_bittersweet_approx;
+	padding: 9px 21px;
+	border: $color_bittersweet_approx 2px solid;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	letter-spacing: 1;
+	&:hover {
+		background-color: $color_bittersweet_5_approx;
+	}
+}
+.hr_red {
+	width: 100%;
+	background-color: $color_bittersweet_approx;
+	height: 5px;
+}
+.hr_grey {
+	width: 100%;
+	background-color: $color_bon_jour_approx;
+	height: 2px;
+}
+.bars {
+	position: fixed;
+	left: 17;
+	top: 80;
+	z-index: 10;
+	i {
+		font-size: 1.5em;
+		color: $color_bittersweet_approx;
+	}
+}
